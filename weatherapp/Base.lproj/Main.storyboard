@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weatherapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marcelo-vaz-408595.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="53E-rO-Knv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-MO-2W0">
+                                <rect key="frame" x="20" y="20" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1L-gO-Wzs">
+                                <rect key="frame" x="20" y="70" width="374" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g Bishkek" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SjU-Cb-I71">
+                                <rect key="frame" x="20" y="127.66666666666669" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipb-ut-1Xo">
+                                <rect key="frame" x="20" y="186.66666666666666" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOO-sG-ngH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP0-ba-a4N">
+                                <rect key="frame" x="20" y="281" width="374" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.98067825819426035" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="53E-rO-Knv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6dV-ve-xFH"/>
+                            <constraint firstItem="s1L-gO-Wzs" firstAttribute="top" secondItem="S2B-MO-2W0" secondAttribute="bottom" constant="15" id="9D8-Fg-99V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1L-gO-Wzs" secondAttribute="trailing" constant="20" id="Ael-qn-utr"/>
+                            <constraint firstItem="53E-rO-Knv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BGi-eH-BIC"/>
+                            <constraint firstItem="53E-rO-Knv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CLG-U7-7XO"/>
+                            <constraint firstItem="SjU-Cb-I71" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JeT-My-RGJ"/>
+                            <constraint firstItem="53E-rO-Knv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NaO-kI-1nx"/>
+                            <constraint firstItem="SjU-Cb-I71" firstAttribute="top" secondItem="s1L-gO-Wzs" secondAttribute="bottom" constant="30" id="Q4t-g5-ad2"/>
+                            <constraint firstItem="S2B-MO-2W0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Smf-qd-Jv8"/>
+                            <constraint firstItem="S2B-MO-2W0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zb1-6p-HAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ipb-ut-1Xo" secondAttribute="trailing" constant="20" id="arm-lJ-LjK"/>
+                            <constraint firstItem="Ipb-ut-1Xo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="duO-Zv-fV4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SjU-Cb-I71" secondAttribute="trailing" constant="20" id="hFi-v1-4v0"/>
+                            <constraint firstItem="s1L-gO-Wzs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l9Z-K2-Lu3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S2B-MO-2W0" secondAttribute="trailing" constant="20" id="vKX-KU-hff"/>
+                            <constraint firstItem="Ipb-ut-1Xo" firstAttribute="top" secondItem="SjU-Cb-I71" secondAttribute="bottom" constant="29" id="zcz-dg-Dxx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityName" destination="SjU-Cb-I71" id="Qde-Ao-GVI"/>
+                        <outlet property="resultLable" destination="MP0-ba-a4N" id="O0J-8v-noK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="116.57608695652175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="marcelo-vaz-408595.jpg" width="1000" height="1502"/>
+    </resources>
+</document>
